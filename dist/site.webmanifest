@@ -1,0 +1,14 @@
+{
+  "name": "EFA – Étoile Football Académie",
+  "short_name": "EFA",
+  "description": "Académie de formation de jeunes footballeurs de 6 à 18 ans à Patar, Sénégal.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0b1d4f",
+  "lang": "fr",
+  "icons": [
+    { "src": "assets/img/brand/logo-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/brand/logo-180.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}

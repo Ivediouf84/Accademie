@@ -1,0 +1,61 @@
+<!--
+title: Contact – Étoile Football Académie, Patar | EFA
+description: Contacter l'Étoile Football Académie à Patar, Sénégal : téléphone, WhatsApp, e-mail, formulaire de contact et localisation.
+page: contact
+-->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> › Contact</nav>
+    <h1>Contact</h1>
+    <p>Une question sur l'académie, les inscriptions ou un partenariat ? Écrivez-nous.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="reveal">
+      <span class="eyebrow">Coordonnées</span>
+      <h2>Nous joindre</h2>
+      <ul class="contact-list mt-2">
+        <li><span class="icon-badge"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-pin"></use></svg></span><div><strong>Adresse</strong><span data-contact="adresse">Patar, Sénégal</span></div></li>
+        <li><span class="icon-badge"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-phone"></use></svg></span><div><strong>Téléphone</strong><span data-contact="telephone"></span></div></li>
+        <li><span class="icon-badge"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"></use></svg></span><div><strong>WhatsApp</strong><span data-contact="whatsapp"></span></div></li>
+        <li><span class="icon-badge"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-mail"></use></svg></span><div><strong>E-mail</strong><span data-contact="email"></span></div></li>
+        <li><span class="icon-badge"><svg aria-hidden="true"><use href="assets/img/icons.svg#i-clock"></use></svg></span><div><strong>Horaires</strong><span data-contact="horaires"></span></div></li>
+      </ul>
+      <div class="socials mt-2" data-socials></div>
+    </div>
+
+    <form class="form reveal" name="contact" data-form="contact" method="post" data-netlify="true" netlify-honeypot="site_web" novalidate>
+      <input type="hidden" name="form-name" value="contact">
+      <div class="hp-field" aria-hidden="true"><label>Ne pas remplir <input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
+      <fieldset>
+        <legend>Formulaire de contact</legend>
+        <div class="form-row form-row--2">
+          <div class="field"><label for="c-nom">Nom et prénom <span class="req">*</span></label><input id="c-nom" name="nom" required maxlength="100" autocomplete="name"><span class="error">Champ obligatoire.</span></div>
+          <div class="field"><label for="c-tel">Téléphone</label><input id="c-tel" type="tel" name="telephone" maxlength="20" autocomplete="tel"><span class="error">Numéro invalide.</span></div>
+        </div>
+        <div class="field"><label for="c-mail">E-mail <span class="req">*</span></label><input id="c-mail" type="email" name="email" required maxlength="120" autocomplete="email"><span class="error">Adresse e-mail valide requise.</span></div>
+        <div class="field"><label for="c-sujet">Sujet <span class="req">*</span></label>
+          <select id="c-sujet" name="sujet" required><option value="">Choisir…</option><option>Inscription d'un enfant</option><option>Détection / tests</option><option>Partenariat</option><option>Presse / médias</option><option>Retrait d'une photo ou d'une information</option><option>Autre</option></select><span class="error">Champ obligatoire.</span></div>
+        <div class="field"><label for="c-msg">Message <span class="req">*</span></label><textarea id="c-msg" name="message" required maxlength="2000"></textarea><span class="error">Champ obligatoire.</span></div>
+      </fieldset>
+      <label class="consent"><input type="checkbox" name="consentement_donnees" value="oui" required><span>J'accepte que l'EFA utilise ces informations pour répondre à mon message (<a href="mentions-legales.html#donnees">confidentialité</a>). <span class="req">*</span></span></label>
+      <div class="form-status" role="status" aria-live="polite"></div>
+      <button class="btn btn--primary" type="submit">Envoyer le message</button>
+    </form>
+  </div>
+</section>
+
+<section class="section section--alt" aria-labelledby="map-title">
+  <div class="container">
+    <h2 id="map-title">Localisation</h2>
+    <div class="map-box" id="map">
+      <div class="placeholder">
+        <strong>Carte bientôt disponible</strong>
+        Patar, Sénégal. La carte s'affichera dès que les coordonnées GPS du terrain seront renseignées.
+      </div>
+    </div>
+    <p class="mt-1"><a id="map-link" href="#" target="_blank" rel="noopener" hidden>Ouvrir dans OpenStreetMap</a></p>
+  </div>
+</section>

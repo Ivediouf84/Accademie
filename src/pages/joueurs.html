@@ -1,0 +1,48 @@
+<!--
+title: Nos joueurs – Effectif par catégorie U7 à U18 | EFA
+description: Les jeunes joueurs de l'Étoile Football Académie, présentés par catégorie (U7, U9, U11, U13, U15, U17, U18) : poste, numéro, pied fort, parcours.
+page: joueurs
+-->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> › Nos joueurs</nav>
+    <h1>Nos joueurs</h1>
+    <p>Les talents de l'académie, de l'école de football aux Espoirs.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="notice mb-2 reveal">
+      <svg aria-hidden="true"><use href="assets/img/icons.svg#i-shield"></use></svg>
+      <div>
+        <p><b>Protection des mineurs.</b> Une fiche n'est publiée qu'avec l'autorisation écrite du représentant légal. Aucune coordonnée personnelle, adresse ou école n'est affichée. Toute famille peut demander le retrait d'une fiche à tout moment.</p>
+      </div>
+    </div>
+
+    <div class="toolbar">
+      <div class="filters" id="players-filters" role="group" aria-label="Filtrer par catégorie"></div>
+      <label class="visually-hidden" for="players-search">Rechercher un joueur</label>
+      <input class="search-input" id="players-search" type="search" placeholder="Rechercher (nom, poste)…">
+    </div>
+    <p class="result-count" id="players-count" aria-live="polite"></p>
+    <div class="grid grid--4" id="players-grid"></div>
+
+    <h2 class="mt-3">Correspondance des catégories</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Catégorie</th><th scope="col">Âge indicatif</th><th scope="col">Groupe de formation EFA</th></tr></thead>
+        <tbody>
+          <tr><td>U7</td><td>6 ans</td><td>École de football (6 – 8 ans)</td></tr>
+          <tr><td>U9</td><td>7 – 8 ans</td><td>École de football (6 – 8 ans)</td></tr>
+          <tr><td>U11</td><td>9 – 10 ans</td><td>Pré-formation (9 – 11 ans)</td></tr>
+          <tr><td>U13</td><td>11 – 12 ans</td><td>Pré-formation / Formation</td></tr>
+          <tr><td>U15</td><td>13 – 14 ans</td><td>Formation (12 – 14 ans)</td></tr>
+          <tr><td>U17</td><td>15 – 16 ans</td><td>Espoirs (15 – 18 ans)</td></tr>
+          <tr><td>U18</td><td>17 – 18 ans</td><td>Espoirs (15 – 18 ans)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted mt-1">Correspondance indicative, à aligner sur les catégories officielles de la Fédération Sénégalaise de Football.</p>
+  </div>
+</section>

@@ -1,0 +1,10 @@
+# dist/ EST versionné : Vercel publie ce dossier tel quel (pas d'étape de build côté serveur)
+.vercel/
+.claude/
+node_modules/
+Thumbs.db
+desktop.ini
+.DS_Store
+~$*
+*.docx
+*.xlsx
