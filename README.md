@@ -48,3 +48,22 @@ Accademie de foot/
 | Ajouter un partenaire                      | `src/data/partenaires.js`     |
 
 Après chaque modification : relancer `.\build.ps1`, vérifier avec `.\serve.ps1`, puis republier `dist/`.
+
+## Mise en ligne actuelle (GitHub + Vercel)
+
+- Code source : dépôt privé GitHub `Ivediouf84/Accademie` (branche `main`)
+- Site public : https://accademie-zeta.vercel.app (projet Vercel « accademie »)
+- Vercel publie le dossier `dist/` tel quel (voir `vercel.json`) : **toujours lancer `.\build.ps1` avant d'enregistrer**, sinon les modifications de `src/` n'apparaîtront pas.
+
+Publier une mise à jour :
+
+```powershell
+.\build.ps1
+git add -A
+git commit -m "Description de la modification"
+git push
+```
+
+Vercel redéploie automatiquement en moins d'une minute après chaque `git push`.
+
+Formulaires sur Vercel : utiliser Formspree (`fournisseur: "formspree"` dans `src/data/config.js`), car l'option « netlify » ne fonctionne pas sur Vercel.
